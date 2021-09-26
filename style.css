@@ -80,6 +80,11 @@ nav .fa{
     font-size: 30px;
     color: #000;
 }
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: #000;
+}
 .hero-btn {
     display: inline-block;
     text-decoration: none;
@@ -133,6 +138,9 @@ nav .fa{
         font-size: 45px;
     }
     .text-box h2{
+        font-size: 17px;
+    }
+    .text-box p{
         font-size: 17px;
     }
 }
