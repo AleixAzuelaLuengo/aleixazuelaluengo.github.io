@@ -12,6 +12,15 @@
     position: relative;
     overflow: hidden;
 }
+.kauil-header{
+    min-height: 75vh;
+    width: 100%;
+    background-image: url(images/kauils/Logo.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
 
 nav{
     display: flex;
@@ -66,17 +75,19 @@ nav .fa{
     font-size: 62px;
     color: #000;
 }
-.text-box p{
+.text-box h2{
     margin: 10px 0 40px;
-    font-size: 26px;
+    font-size: 30px;
+    color: #000;
 }
 .hero-btn {
     display: inline-block;
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #000;
+    border: 2px solid #000;
     padding: 12px 34px;
-    font-size: 13px;
+    font-size: 20px;
+    font-style: normal;
     background: transparent;
     position: relative;
     cursor: pointer;
@@ -84,8 +95,9 @@ nav .fa{
 }
 
 .hero-btn:hover{
-    border: 1px solid #f44336;
-    background: #f44336;
+    color: #fff;
+    border: 1px solid #2d9596;
+    background: rgba(5,109,110, 0.6);
 }
 
 
@@ -120,6 +132,9 @@ nav .fa{
     .text-box h1{
         font-size: 45px;
     }
+    .text-box h2{
+        font-size: 17px;
+    }
 }
 
 /*---------- course --------*/
@@ -151,6 +166,16 @@ p{
     display: flex;
     justify-content: center;  
 }
+.row-responsability{
+    margin-top: 2.5%;
+    display: inline-flex;
+    justify-content: center;  
+}
+.row-image{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;  
+}
   
 .course-col{
     flex-basis: 31%;
@@ -172,6 +197,9 @@ h3{
 
 @media (max-width:700px){
     .row{
+        flex-direction: column;
+    }
+    .row-image{
         flex-direction: column;
     }
 } 
@@ -339,6 +367,12 @@ h3{
     cursor: pointer;
     padding: 10px 0;
 }
+.icons .fab{
+    color: #000;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
 .fa-heart-o{
     color: #f44336;
 }
@@ -346,7 +380,24 @@ h3{
 
 /*--------------- About Us Page --------------*/
 
-
+.embed-video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5%;
+}
+.embed-video h1{
+    padding-bottom: 10px;
+}
+.embed-video-bottom h1{
+    padding-bottom: 10px;
+}
+.embed-video-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
 .sub-header{
     height: 50vh;
     width: 100%;
@@ -368,14 +419,43 @@ h3{
 
 .about-col{
     flex-basis: 48%;
-    padding: 30px 2px;
+    padding: 30px 30px;
+}
+.plaintext-col{
+    padding: 30px 30px;
+}
+.image-col{
+    flex-basis: 48%;
+    padding: 10px 10px;
 }
 .about-col h1{
     padding-top: 0;
+    text-align: center;
 }
 .about-col p{
     padding: 15px 0 25px;
+    font-size: 18px;
+    text-align: justify;
 }
+.about-col h2{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    color: #000;
+}
+.plaintext-col h1{
+    text-align: center;
+}
+.plaintext-col p{
+    padding: 15px 0 25px;
+    font-size: 18px;
+    text-align: justify;
+}
+.plaintext-col h2{
+    padding: 15px 0 25px;
+    font-size: 25px;
+    color: #000;
+}
+
 
 .hero-btn.red-btn{
     border: 1px solid #f44336;
@@ -397,6 +477,9 @@ h3{
     flex-basis: 50%;
 }
 .about-col img{
+    width: 100%;
+}
+.image-col img{
     width: 100%;
 }
 
