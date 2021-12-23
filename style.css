@@ -410,6 +410,8 @@ h3{
 
 .apart-image img{
     padding-right: 37px;
+    width: 100%;
+  height: 100%;
 }
 
 .embed-video {
@@ -457,6 +459,7 @@ h3{
 }
 
 .about-col{
+    align-self: center;
     flex-basis: 48%;
     padding: 30px 30px;
 }
