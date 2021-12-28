@@ -405,6 +405,12 @@ h3{
     cursor: pointer;
     padding: 10px 0;
 }
+.steam-icons .fa{
+    color: #000000;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+}
 .icons .fab{
     color: #000;
     margin: 0 13px;
