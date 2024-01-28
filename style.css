@@ -21,6 +21,7 @@
     overflow: hidden;
 }
 .apart-header{
+
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -83,6 +84,7 @@ nav .fa{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    margin-top: 2.5%;
 }
 .text-box h1{
     font-size: 62px;
@@ -437,51 +439,101 @@ h3{
 
 
 /*--------------- About Us Page --------------*/
-
+.container{
+    display: block;
+    align-self: center;  
+    width: 100%;
+    margin: 25px;
+    max-width: 750px; //set your `max-width` here
+    max-height: auto; //necessary to keep proportion
+    
+}
+.embed-responsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    &::before{
+        padding-bottom: 56.25%;
+        display: block;
+        content: "";
+        box-sizing: border-box; 
+    }
+    iframe{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
 .apart-image{
+
     display: flex;
+    max-height: 40vh;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .apart-image h2{
+    display: inline-flex;
     margin-left: 2.5%;
     margin-right: 2.5%;
     text-align: center;
 }
 
 .apart-image img{
+    max-height: 40vh;
+    max-width: 71vh;
+    display: inline-flex;
     padding-right: 37px;
     width: 100%;
-  height: 100%;
+    height: 100%;
+    align-self: center;
 }
 
 .evozor-image{
     display: flex;
+    max-height: 40vh;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 .evozor-image img{
+    max-height: 40vh;
+    max-width: 71vh;
+    display: inline-flex;
     padding-right: 37px;
     width: 100%;
-  height: 100%;
+    height: 100%;
+    align-self: center;
 }
 
 .embed-video {
-  position: relative;
-    align-items: center;
-   padding-bottom: 56.25%;/* 16:9 */
-  height: 0;
+    position: relative;
+    padding-bottom: 56.25%;/* 16:9 */
+    height: 0;
 }
 .embed-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 .embed-video-bottom {
   position: relative;
+    
    padding-bottom: 56.25%;/* 16:9 */
   height: 0;
 }
