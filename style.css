@@ -200,6 +200,7 @@ p{
     display: flex;
     justify-content: center;  
 }
+
   
 .course-col{
     flex-basis: 31%;
@@ -572,11 +573,55 @@ h3{
     padding-bottom: 50px;
 }
 
+.about-us h1{
+    display: flex;
+    justify-content: center;
+}
+
+
 .about-col{
     align-self: center;
 flex-basis: 48%;
     padding: 30px 30px;
 }
+
+.about-col-ld{
+    align-self: center;
+flex-basis: 48%;
+    padding: 30px 30px;
+}
+
+
+.imgLink { border: none; background: none; }
+.imgLink:active img, .imgLink:focus img
+{
+    position: absolute;
+    height: 32rem;
+    width: auto;
+}
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+.overlay image{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+
+
 .plaintext-col{
     padding: 30px 30px;
 }
@@ -601,6 +646,7 @@ flex-basis: 48%;
     font-size: 18px;
     color: #000;
 }
+
 .plaintext-col h1{
     text-align: center;
 }
@@ -637,6 +683,11 @@ flex-basis: 48%;
 }
 .about-col img{
     width: 100%;
+}
+.about-col-ld img{
+    display: flex;
+    align-self: center;
+    width: 75%;
 }
 .image-col img{
     width: 100%;
